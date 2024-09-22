@@ -7,4 +7,13 @@ fn main() {
     let y=p.1;
 
     println!("{} {} {} {}", a, b, x, y);
+
+    enum Animal{
+        dog=1,
+        cat=200,
+        tiger,
+    }
+
+    let x=Animal::tiger as isize;
+    println!("{}", x);
 }
