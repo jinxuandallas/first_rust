@@ -16,4 +16,9 @@ fn main() {
 
     let x=Animal::tiger as isize;
     println!("{}", x);
+
+    let v=loop {
+        break 10;
+    };
+    println!("{}", v);
 }
