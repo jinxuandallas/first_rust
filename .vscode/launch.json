@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'hello_world'",
+            "name": "Debug executable 'first_rust'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=hello_world",
-                    "--package=hello_world"
+                    "--bin=first_rust",
+                    "--package=first_rust"
                 ],
                 "filter": {
-                    "name": "hello_world",
+                    "name": "first_rust",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'hello_world'",
+            "name": "Debug unit tests in executable 'first_rust'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=hello_world",
-                    "--package=hello_world"
+                    "--bin=first_rust",
+                    "--package=first_rust"
                 ],
                 "filter": {
-                    "name": "hello_world",
+                    "name": "first_rust",
                     "kind": "bin"
                 }
             },

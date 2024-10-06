@@ -1,3 +1,10 @@
+// use std::path;
+// use first_rust::test1;
+use first_rust::test2;
+// use test1::test3;
+mod test1;
+
+// use crate::lib::test1;
 fn main() {
     println!("Hello, world!");
 
@@ -21,4 +28,17 @@ fn main() {
         break 10;
     };
     println!("{}", v);
+
+    let v=Some(3u8);
+    if let Some(4) =v  {
+        println!("three");
+    }
+    
+    println!("{:?}",v);
+
+    // #[path ="lib.rs"]
+    // mod  lib;
+    // lib::test1();
+    // test2();
+    test1::test3();
 }
